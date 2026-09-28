@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "PhoneField Demo",
+    "slug": "react-native-phone-input-field-example",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.phonefield.example"
+    },
+    "android": {
+      "package": "dev.phonefield.example",
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "experiments": {
+      "tsconfigPaths": false
+    }
+  }
+}

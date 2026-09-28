@@ -1,0 +1,531 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`<PhoneField /> snapshots dark 1`] = `
+<View
+  style={
+    [
+      false,
+      undefined,
+    ]
+  }
+  testID="phone-field"
+>
+  <Text
+    nativeID="phone-field-label"
+    style={
+      [
+        {
+          "fontWeight": "500",
+        },
+        {
+          "color": "#F9FAFB",
+          "fontFamily": undefined,
+          "fontSize": 14,
+          "marginBottom": 8,
+        },
+        undefined,
+      ]
+    }
+  >
+    Téléphone
+  </Text>
+  <View
+    collapsable={false}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#111827",
+        "borderColor": "rgba(107, 114, 128, 1)",
+        "borderRadius": 12,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "minHeight": 52,
+        "paddingHorizontal": 12,
+        "transform": [
+          {
+            "translateX": 0,
+          },
+        ],
+      }
+    }
+    testID="phone-field-container"
+  >
+    <View
+      accessibilityHint="Appuyer pour changer de pays"
+      accessibilityLabel="Pays sélectionné : Bénin, +229"
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 4,
+          "top": 8,
+        }
+      }
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "flexDirection": "row",
+            "minHeight": 44,
+          },
+          false,
+          undefined,
+        ]
+      }
+      testID="phone-field-country-trigger"
+    >
+      <Text
+        accessibilityElementsHidden={true}
+        allowFontScaling={false}
+        importantForAccessibility="no"
+        style={
+          [
+            {
+              "fontSize": 22,
+              "lineHeight": 28,
+            },
+            {
+              "includeFontPadding": false,
+              "textAlignVertical": "center",
+            },
+            undefined,
+          ]
+        }
+        testID="flag-BJ"
+      >
+        🇧🇯
+      </Text>
+      <View
+        collapsable={false}
+        style={
+          {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "marginStart": 4,
+            "transform": [
+              {
+                "rotate": "0deg",
+              },
+            ],
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            [
+              {
+                "fontSize": 14,
+              },
+              {
+                "color": "#D1D5DB",
+              },
+              undefined,
+            ]
+          }
+        >
+          ▾
+        </Text>
+      </View>
+      <Text
+        style={
+          [
+            {
+              "fontWeight": "500",
+              "writingDirection": "ltr",
+            },
+            {
+              "color": "#F9FAFB",
+              "fontFamily": undefined,
+              "fontSize": 16,
+              "marginStart": 8,
+            },
+            undefined,
+          ]
+        }
+      >
+        ⁦+229⁩
+      </Text>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "marginVertical": 10,
+              "width": 1,
+            },
+            {
+              "backgroundColor": "#374151",
+              "marginStart": 12,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+    <TextInput
+      accessibilityLabel="Téléphone"
+      accessibilityLabelledBy="phone-field-label"
+      autoComplete="tel"
+      autoCorrect={false}
+      editable={true}
+      importantForAutofill="yes"
+      keyboardType="phone-pad"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onFocus={[Function]}
+      onSelectionChange={[Function]}
+      placeholder="01 •• •• •• ••"
+      placeholderTextColor="#9CA3AF"
+      style={
+        [
+          {
+            "alignSelf": "stretch",
+            "flex": 1,
+            "fontVariant": [
+              "tabular-nums",
+            ],
+            "paddingHorizontal": 0,
+            "paddingVertical": 8,
+            "writingDirection": "ltr",
+          },
+          {
+            "color": "#F9FAFB",
+            "fontFamily": undefined,
+            "fontSize": 16,
+            "marginStart": 12,
+          },
+          undefined,
+        ]
+      }
+      testID="phone-field-input"
+      textContentType="telephoneNumber"
+      value=""
+    />
+  </View>
+  <View
+    collapsable={false}
+    style={
+      {
+        "height": undefined,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      onLayout={[Function]}
+      style={
+        {
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "transform": [
+            {
+              "translateY": -4,
+            },
+          ],
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<PhoneField /> snapshots light 1`] = `
+<View
+  style={
+    [
+      false,
+      undefined,
+    ]
+  }
+  testID="phone-field"
+>
+  <Text
+    nativeID="phone-field-label"
+    style={
+      [
+        {
+          "fontWeight": "500",
+        },
+        {
+          "color": "#111827",
+          "fontFamily": undefined,
+          "fontSize": 14,
+          "marginBottom": 8,
+        },
+        undefined,
+      ]
+    }
+  >
+    Téléphone
+  </Text>
+  <View
+    collapsable={false}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "rgba(138, 147, 163, 1)",
+        "borderRadius": 12,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "minHeight": 52,
+        "paddingHorizontal": 12,
+        "transform": [
+          {
+            "translateX": 0,
+          },
+        ],
+      }
+    }
+    testID="phone-field-container"
+  >
+    <View
+      accessibilityHint="Appuyer pour changer de pays"
+      accessibilityLabel="Pays sélectionné : Bénin, +229"
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 4,
+          "top": 8,
+        }
+      }
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "flexDirection": "row",
+            "minHeight": 44,
+          },
+          false,
+          undefined,
+        ]
+      }
+      testID="phone-field-country-trigger"
+    >
+      <Text
+        accessibilityElementsHidden={true}
+        allowFontScaling={false}
+        importantForAccessibility="no"
+        style={
+          [
+            {
+              "fontSize": 22,
+              "lineHeight": 28,
+            },
+            {
+              "includeFontPadding": false,
+              "textAlignVertical": "center",
+            },
+            undefined,
+          ]
+        }
+        testID="flag-BJ"
+      >
+        🇧🇯
+      </Text>
+      <View
+        collapsable={false}
+        style={
+          {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "marginStart": 4,
+            "transform": [
+              {
+                "rotate": "0deg",
+              },
+            ],
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            [
+              {
+                "fontSize": 14,
+              },
+              {
+                "color": "#4B5563",
+              },
+              undefined,
+            ]
+          }
+        >
+          ▾
+        </Text>
+      </View>
+      <Text
+        style={
+          [
+            {
+              "fontWeight": "500",
+              "writingDirection": "ltr",
+            },
+            {
+              "color": "#111827",
+              "fontFamily": undefined,
+              "fontSize": 16,
+              "marginStart": 8,
+            },
+            undefined,
+          ]
+        }
+      >
+        ⁦+229⁩
+      </Text>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "marginVertical": 10,
+              "width": 1,
+            },
+            {
+              "backgroundColor": "#D1D5DB",
+              "marginStart": 12,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+    <TextInput
+      accessibilityLabel="Téléphone"
+      accessibilityLabelledBy="phone-field-label"
+      autoComplete="tel"
+      autoCorrect={false}
+      editable={true}
+      importantForAutofill="yes"
+      keyboardType="phone-pad"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onFocus={[Function]}
+      onSelectionChange={[Function]}
+      placeholder="01 •• •• •• ••"
+      placeholderTextColor="#646B77"
+      style={
+        [
+          {
+            "alignSelf": "stretch",
+            "flex": 1,
+            "fontVariant": [
+              "tabular-nums",
+            ],
+            "paddingHorizontal": 0,
+            "paddingVertical": 8,
+            "writingDirection": "ltr",
+          },
+          {
+            "color": "#111827",
+            "fontFamily": undefined,
+            "fontSize": 16,
+            "marginStart": 12,
+          },
+          undefined,
+        ]
+      }
+      testID="phone-field-input"
+      textContentType="telephoneNumber"
+      value=""
+    />
+  </View>
+  <View
+    collapsable={false}
+    style={
+      {
+        "height": undefined,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      onLayout={[Function]}
+      style={
+        {
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "transform": [
+            {
+              "translateY": -4,
+            },
+          ],
+        }
+      }
+    />
+  </View>
+</View>
+`;

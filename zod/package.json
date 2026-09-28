@@ -1,0 +1,6 @@
+{
+  "main": "../lib/commonjs/zod.js",
+  "module": "../lib/module/zod.js",
+  "types": "../lib/typescript/commonjs/src/zod.d.ts",
+  "private": true
+}

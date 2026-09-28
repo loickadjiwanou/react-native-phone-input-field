@@ -1,0 +1,6 @@
+{
+  "main": "../lib/commonjs/core/index.js",
+  "module": "../lib/module/core/index.js",
+  "types": "../lib/typescript/commonjs/src/core/index.d.ts",
+  "private": true
+}

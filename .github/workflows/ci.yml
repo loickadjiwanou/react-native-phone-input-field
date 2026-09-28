@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: ${{ matrix.task.name }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        task:
+          - { name: Lint, run: yarn lint }
+          - { name: Typecheck, run: yarn typecheck && yarn workspace react-native-phone-input-field-example typecheck }
+          - { name: Test, run: yarn test --coverage --ci }
+          - { name: Build, run: yarn build }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: corepack enable
+      - uses: actions/cache@v4
+        with:
+          path: |
+            .yarn/cache
+            node_modules
+            example/node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+      - run: yarn install --immutable
+      - run: ${{ matrix.task.run }}
+      - if: matrix.task.name == 'Test'
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: coverage/

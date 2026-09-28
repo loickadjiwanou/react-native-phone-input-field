@@ -1,0 +1,17 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "react-native-phone-input-field": ["../src/index"],
+      "react-native-phone-input-field/zod": ["../src/zod"],
+      "react-native-phone-input-field/core": ["../src/core/index"],
+      "react-native-phone-input-field/min": ["../src/min"],
+      "react-native": ["./node_modules/react-native"],
+      "react": ["./node_modules/@types/react"],
+      "react/*": ["./node_modules/@types/react/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
+}

@@ -1,0 +1,6 @@
+{
+  "main": "../lib/commonjs/min.js",
+  "module": "../lib/module/min.js",
+  "types": "../lib/typescript/commonjs/src/min.d.ts",
+  "private": true
+}
