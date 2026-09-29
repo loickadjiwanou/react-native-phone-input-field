@@ -413,6 +413,17 @@ describe('<PhoneField /> states (spec §4.2)', () => {
     ).toHaveAccessibleName('Selected country: Benin, +229');
   });
 
+  it('lang switches the UI and country names, and wins over locale', async () => {
+    const t = await renderField({ lang: 'en' });
+    expect(t.field().country.name).toBe('Benin');
+    expect(t.field().messages.modalTitle).toBe('Select a country');
+
+    await t.rerender(<PhoneField defaultCountry="BJ" lang="fr" locale="en" />);
+    expect(
+      screen.getByTestId('phone-field-country-trigger')
+    ).toHaveAccessibleName('Pays sélectionné : Bénin, +229');
+  });
+
   it('variants and sizes render', async () => {
     for (const variant of ['outlined', 'filled', 'underlined'] as const) {
       for (const size of ['sm', 'md', 'lg'] as const) {

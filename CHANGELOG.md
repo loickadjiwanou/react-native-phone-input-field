@@ -1,5 +1,11 @@
 # react-native-phone-input-field
 
+## 0.2.0
+
+### Minor Changes
+
+- Add a `lang` prop (`'fr' | 'en'`) to `<PhoneField />` and `usePhoneField`. It sets the language of the country picker modal, the country names, the error messages and the accessibility labels in one go. It is a typed shortcut for `locale` and wins over it (and over the `PhoneFieldThemeProvider` locale). The `PhoneFieldLang` type is exported.
+
 ## 0.1.0
 
 ### Minor Changes

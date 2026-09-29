@@ -5,9 +5,9 @@ import { countryNamesEN } from './countryNames.en';
 import { countryNamesFR } from './countryNames.fr';
 import { en } from './en';
 import { fr } from './fr';
-import type { Messages } from './types';
+import type { Messages, PhoneFieldLang } from './types';
 
-export type { Messages };
+export type { Messages, PhoneFieldLang };
 export { en, fr };
 
 /** Default UI language of the package. */

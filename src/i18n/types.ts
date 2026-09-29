@@ -1,5 +1,8 @@
 import type { NumberType, PhoneValidationError } from '../types';
 
+/** Languages bundled with the package. */
+export type PhoneFieldLang = 'fr' | 'en';
+
 /**
  * Every user-facing string. Placeholders: `{country}` (localized country
  * name), `{callingCode}` (without `+`), `{types}` (allowed number types).

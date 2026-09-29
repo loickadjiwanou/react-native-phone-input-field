@@ -29,7 +29,12 @@ import {
   type PhoneAnalysis,
   type ValidationOptions,
 } from '../core/validation';
-import { getMessages, interpolate, type Messages } from '../i18n';
+import {
+  getMessages,
+  interpolate,
+  type Messages,
+  type PhoneFieldLang,
+} from '../i18n';
 import type {
   Country,
   CountryCode,
@@ -118,6 +123,11 @@ export interface UsePhoneFieldOptions {
   onModalClose?: () => void;
 
   // ── i18n ─────────────────────────────────────────────────────────────
+  /**
+   * Language of the modal, country names and messages: `'fr'` (default) or
+   * `'en'`. Shortcut for `locale`, and takes precedence over it.
+   */
+  lang?: PhoneFieldLang;
   /** `'fr'` (default), `'en'`, or any BCP 47 tag. */
   locale?: string;
   messages?: DeepPartial<Messages>;
@@ -271,8 +281,12 @@ function useDelayedTrue(flag: boolean, ms: number, bypass: boolean): boolean {
  * and `inputRef` to a `TextInput`, and build the rest yourself.
  */
 export function usePhoneField(
-  options: UsePhoneFieldOptions = {}
+  rawOptions: UsePhoneFieldOptions = {}
 ): PhoneFieldController {
+  // `lang` is a typed shortcut for `locale`.
+  const options = rawOptions.lang
+    ? { ...rawOptions, locale: rawOptions.lang }
+    : rawOptions;
   const {
     locale,
     messages: messageOverrides,

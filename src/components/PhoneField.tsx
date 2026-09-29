@@ -245,7 +245,7 @@ export const PhoneField = forwardRef<PhoneFieldRef, PhoneFieldProps>(
 
     const field = usePhoneField({
       ...props,
-      locale: props.locale ?? context.locale,
+      locale: props.lang ?? props.locale ?? context.locale,
       messages: props.messages ?? context.messages,
     });
     const { theme } = usePhoneFieldTheme(themeProp, colorsProp, colorScheme);

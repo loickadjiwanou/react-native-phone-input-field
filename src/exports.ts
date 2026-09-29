@@ -21,7 +21,7 @@ export {
   type DefaultCountryOptions,
 } from './hooks/useDefaultCountry';
 export * from './theme';
-export { en, fr } from './i18n';
+export { en, fr, type PhoneFieldLang } from './i18n';
 export type {
   InputFocusEvent,
   InputSelectionChangeEvent,

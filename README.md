@@ -266,6 +266,7 @@ The values above are the defaults. To use `react-native-modal` itself, pass `ren
 | `onValidHaptic` | `() => void` | Called when the number becomes valid. Plug `expo-haptics` or anything, no dependency. |
 | `announceValidation` | `boolean` (default `true`) | Screen reader announcements. |
 | `onFocus` / `onBlur` | `(e) => void` | |
+| `lang` | `'fr'` | Language of the modal, country names and messages: `'fr'` or `'en'`. |
 | `locale` / `messages` / `countryNameOverrides` | | See [i18n](#i18n). |
 | `inputProps` | `TextInputProps` | Passed to the `TextInput` (`value`, `onChangeText`, `onFocus` and `onBlur` are managed). |
 | `testID` | `string` | Default `phone-field`. Children: `-input`, `-container`, `-country-trigger`, `-error`, `-helper`, `-clear`. |
@@ -399,7 +400,14 @@ import { PhoneFieldThemeProvider } from 'react-native-phone-input-field';
 
 ## i18n
 
-French (default) and English are included, for the UI and the error messages. Any other `locale` uses English texts. Country names come from `Intl.DisplayNames` when the JS engine has it, and from embedded CLDR tables (FR / EN) otherwise, so Hermes without `DisplayNames` is fine.
+French (default) and English are included, for the UI (country picker modal, search, accessibility labels), the country names and the error messages. Pick one with `lang`:
+
+```tsx
+<PhoneField lang="en" /> // "Select a country", "Benin", …
+<PhoneField lang="fr" /> // "Sélectionnez un pays", "Bénin", …
+```
+
+`lang` is a typed shortcut for `locale`, which also accepts any BCP 47 tag (`"fr-BJ"`, `"en-US"`); `lang` wins when both are set. Any other language uses English texts. Country names come from `Intl.DisplayNames` when the JS engine has it, and from embedded CLDR tables (FR / EN) otherwise, so Hermes without `DisplayNames` is fine.
 
 ```tsx
 <PhoneField
